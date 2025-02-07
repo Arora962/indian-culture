@@ -7,7 +7,7 @@ const FeedbackPage = () => {
   const navigate = useNavigate();  // Initialize the navigate function
   const [feedbackMessage, setFeedbackMessage] = useState(""); // Feedback message state
   const [error, setError] = useState(""); // Error handling state
-  const [success, setSuccess] = useState(""); // Success message state
+  const [success, setSuccess] = useState(""); 
 
   const handleBackClick = () => {
     console.log("Back button clicked.");
@@ -41,6 +41,11 @@ const FeedbackPage = () => {
       if (response.ok) {
         setSuccess("Feedback submitted successfully!");
         setFeedbackMessage(""); // Clear textarea after successful submission
+
+        // Automatically refresh the page after 10 seconds
+        setTimeout(() => {
+          navigate("/");
+        }, 10000);  // Wait for 10 seconds
       } else {
         setError(data.error || "Something went wrong");
       }
@@ -52,13 +57,11 @@ const FeedbackPage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
       <h1 className="text-3xl font-bold mb-4">Feedback</h1>
-
       {/* Display error message */}
       {error && <div className="text-red-500 mb-4">{error}</div>}
-
+      
       {/* Display success message */}
       {success && <div className="text-green-500 mb-4">{success}</div>}
-
       <textarea
         className="w-3/4 p-3 border border-gray-400 rounded-lg"
         rows="5"
@@ -75,9 +78,9 @@ const FeedbackPage = () => {
         >
           Back
         </Button>
-        <Button
+        <Button 
           className="bg-green-500 hover:bg-green-600 flex-1"
-          onClick={handleSubmitClick}  // Attach handleSubmitClick to the submit button
+          onClick={handleSubmitClick} // Ensure Submit triggers the feedback post request
         >
           Submit
         </Button>
