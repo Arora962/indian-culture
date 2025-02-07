@@ -6,10 +6,12 @@ import HistoryPage from "./pages/HistoryPage"; // Create this component
 import FestivalsPage from "./pages/FestivalsPage"; // Create this component
 import CuisinePage from "./pages/CuisinePage"; // Create this component
 import FeedbackPage from "./pages/FeedbackPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/history" element={<HistoryPage />} />
