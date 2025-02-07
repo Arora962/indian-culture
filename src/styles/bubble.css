@@ -1,0 +1,124 @@
+/* Container for bubbles */
+.message-bubble-container {
+    display: flex;
+    flex-direction: row; /* Arrange them horizontally */
+    gap: 16px; /* Space between the bubbles */
+    justify-content: space-evenly; /* Even space for bubbles */
+    margin-top: 40px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding-bottom: 30px; /* Add padding to prevent bubbles from touching the bottom */
+    max-width: 800px; /* Control max-width of the entire container */
+    margin: 0 auto; /* Center the container */
+  }
+
+/* Left Side Bubbles */
+.message-bubble-left {
+  position: relative;
+  width: auto; /* Let the width adjust to text */
+  height: auto; /* Allow height to adjust with content */
+  padding: 25%; /*Padding for the bubble */
+  background-image: url('../assets/images/bubble.jpg'); /* Cloud image as background */
+  background-size: contain; /* Ensures the image is fully contained */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  color: #333; /* Text color */
+  font-size: 16px; /* Adjusted font size for better fit */
+  border-radius: 20px; /* Rounded corners */
+  font-weight: bold;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-100%) translateY(50px); /* Start off screen */
+  animation: floatFromLeft 2s forwards; /* Animation */
+  margin-bottom: 40px; /* Space between each bubble */
+  
+  /* Allow wrapping of text */
+  word-wrap: break-word; /* Allow long words to wrap */
+  white-space: normal; /* Allow wrapping of text */
+  overflow-wrap: break-word; /* Ensure long words wrap properly */
+  
+  display: flex; /* Ensures the bubble takes up full width as block */
+  box-sizing: border-box; /* Ensures padding is included in the size */
+  max-width: 100%; /* Allow the width to stretch based on content */
+}
+
+/* Right Side Bubbles */
+.message-bubble-right {
+  position: relative;
+  width: auto; /* Let the width adjust to text */
+  height: auto; /* Allow height to adjust with content */
+  padding: 25%; /* Padding for the bubble */
+  background-image: url('../assets/images/bubble.jpg'); /* Cloud image as background */
+  background-size: contain; /* Ensures the image is fully contained */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  color: #333; /* Text color */
+  font-size: 16px; /* Adjusted font size for better fit */
+  border-radius: 20px; /* Rounded corners */
+  font-weight: bold;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transform: translateX(100%) translateY(50px); /* Start off screen */
+  animation: floatFromRight 2s forwards; /* Animation */
+  margin-bottom: 40px; /* Space between each bubble */
+  
+  /* Allow wrapping of text */
+  word-wrap: break-word; /* Allow long words to wrap */
+  white-space: normal; /* Allow wrapping of text */
+  overflow-wrap: break-word; /* Ensure long words wrap properly */
+  
+  display: flex; /* Ensures the bubble takes up full width as block */
+  box-sizing: border-box; /* Ensures padding is included in the size */
+  max-width: 100%; /* Allow the width to stretch based on content */
+}
+
+  /* Keyframe for floating from left animation */
+  @keyframes floatFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%) translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) translateY(0);
+    }
+  }
+  
+  /* Keyframe for floating from right animation */
+  @keyframes floatFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%) translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) translateY(0);
+    }
+  }
+  
+  /* Staggering the pop-up animations for each bubble */
+  .message-bubble-left:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .message-bubble-left:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .message-bubble-left:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .message-bubble-left:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  .message-bubble-right:nth-child(1) {
+    animation-delay: 1s;
+  }
+  .message-bubble-right:nth-child(2) {
+    animation-delay: 1.2s;
+  }
+  .message-bubble-right:nth-child(3) {
+    animation-delay: 1.4s;
+  }
+  .message-bubble-right:nth-child(4) {
+    animation-delay: 1.6s;
+  }
+  
