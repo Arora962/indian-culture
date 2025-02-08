@@ -2,12 +2,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const Feedback = require('./models/Feedback');
+const Feedback = require('../models/Feedback');
 require('dotenv').config(); // Load environment variables from .env
 
 // Initialize the express app
 const app = express();
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors());
@@ -53,3 +53,4 @@ app.post('/api/feedback', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Backend server is running on port ${PORT}`);
 });
+module.exports = app;
