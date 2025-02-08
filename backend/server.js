@@ -2,7 +2,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const Feedback = require('./models/Feedback');
+const Feedback = require('./models/Feedback.js');
 require('dotenv').config(); // Load environment variables from .env
 
 // Initialize the express app
