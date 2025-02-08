@@ -9,6 +9,11 @@ const FeedbackPage = () => {
   const [error, setError] = useState(""); // Error handling state
   const [success, setSuccess] = useState(""); 
 
+  // Define backend URL dynamically for local and production
+  const backendUrl = process.env.NODE_ENV === "production"
+    ? "https://your-backend-name.vercel.app"  // Replace with your actual deployed backend URL
+    : "http://localhost:5001";  // Local development URL
+
   const handleBackClick = () => {
     console.log("Back button clicked.");
     navigate(-1);  // Attempt to navigate back
@@ -28,7 +33,7 @@ const FeedbackPage = () => {
 
     try {
       // Send feedback to the backend
-      const response = await fetch("http://localhost:5001/api/feedback", {
+      const response = await fetch(`${backendUrl}/api/feedback`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
