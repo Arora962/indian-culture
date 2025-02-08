@@ -5,7 +5,7 @@ import Button from "../components/Button";
 const CuisinePage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-yellow-300 via-red-300 to-pink-300 p-6">
-      <h1 className="text-4xl font-extrabold text-center text-red-800 mb-4">Indian Cuisine</h1>
+      <h1 className="text-4xl font-extrabold text-center text-red-800 mb-4 leading-normal">Indian Cuisine</h1>
       <p className="text-xl text-gray-600">
         Indian cuisine is diverse, with a rich variety of dishes influenced by geography, history, and culture.
         From spicy curries to savory snacks, Indian food is known for its bold flavors and aromatic spices.

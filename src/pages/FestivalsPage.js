@@ -5,7 +5,7 @@ import Button from "../components/Button";
 const FestivalsPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-pink-300 via-indigo-300 to-yellow-300 p-6">
-      <h1 className="text-4xl font-extrabold text-center text-indigo-800 mb-4">Festivals of India</h1>
+      <h1 className="text-4xl font-extrabold text-center text-indigo-800 mb-4 leading-normal">Festivals of India</h1>
       <p className="text-xl text-gray-600">
         India is known for its vibrant festivals, celebrated throughout the year across different regions. 
         These festivals bring people together, showcasing a blend of culture, traditions, and rituals.

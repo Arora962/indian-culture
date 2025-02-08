@@ -19,7 +19,7 @@ import Timeline from "../components/Timeline";
 const HistoryPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-100 via-indigo-200 to-purple-300 p-6">
-      <h1 className="text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-800 mb-6">
+      <h1 className="text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-800 mb-6 leading-normal">
         History of India
       </h1>
       <p className="text-xl text-gray-700 text-center mb-8">
