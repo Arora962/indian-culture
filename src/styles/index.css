@@ -32,8 +32,8 @@ code {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.075; /* Adjust the opacity for subtlety */
-  z-index: -1; /* Make sure it stays in the background */
+  opacity: 0.075; 
+  z-index: -1; 
 }
 
 .bg-india-head {
@@ -52,7 +52,7 @@ code {
   background-size: auto 150%;
   background-position: center;
   background-repeat: repeat-x;
-  opacity: 10; /* Adjust the opacity for subtlety */
-  z-index: -1; /* Make sure it stays in the background */
+  opacity: 10; 
+  z-index: -1; 
 }
 

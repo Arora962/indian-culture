@@ -4,8 +4,8 @@ import Button from "../components/Button";
 
 const FestivalsPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-4xl font-extrabold mb-4">Festivals of India</h1>
+    <div className="min-h-screen bg-gradient-to-r from-pink-300 via-indigo-300 to-yellow-300 p-6">
+      <h1 className="text-4xl font-extrabold text-center text-indigo-800 mb-4">Festivals of India</h1>
       <p className="text-xl text-gray-600">
         India is known for its vibrant festivals, celebrated throughout the year across different regions. 
         These festivals bring people together, showcasing a blend of culture, traditions, and rituals.
@@ -16,8 +16,8 @@ const FestivalsPage = () => {
       </p>
 
       {/* Key Festivals Section */}
-      <section className="mt-8">
-        <h2 className="text-3xl font-semibold mb-4">Key Festivals of India</h2>
+      <section className="mt-8 bg-white shadow-lg rounded-lg p-6">
+        <h2 className="text-3xl font-semibold text-pink-600 mb-4">Key Festivals of India</h2>
         <p className="text-lg text-gray-700">
           Festivals in India are celebrated with enthusiasm and grandeur. Here are some of the major ones:
         </p>
@@ -31,8 +31,8 @@ const FestivalsPage = () => {
       </section>
 
       {/* Regional Celebrations */}
-      <section className="mt-8">
-        <h2 className="text-3xl font-semibold mb-4">Regional Celebrations</h2>
+      <section className="mt-8 bg-white shadow-lg rounded-lg p-6">
+        <h2 className="text-3xl font-semibold text-pink-600 mb-4">Regional Celebrations</h2>
         <p className="text-lg text-gray-700">
           Festivals are celebrated with regional variations across India. Here are some festivals that are unique to specific states or regions:
         </p>
@@ -46,8 +46,8 @@ const FestivalsPage = () => {
       </section>
 
       {/* Cultural Importance */}
-      <section className="mt-8">
-        <h2 className="text-3xl font-semibold mb-4">Cultural Importance of Festivals</h2>
+      <section className="mt-8 bg-white shadow-lg rounded-lg p-6">
+        <h2 className="text-3xl font-semibold text-pink-600 mb-4">Cultural Importance of Festivals</h2>
         <p className="text-lg text-gray-700">
           Festivals in India are more than just celebrations; they hold deep cultural, spiritual, and social significance. They:
         </p>

@@ -43,7 +43,7 @@ const LandingPage = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6 mb-12">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         {cards.map((card, index) => (
           <Link to={card.link} key={index}>
             <Card
@@ -81,7 +81,7 @@ const LandingPage = () => {
           </Button>
         </Link>
       </div>
-      
+
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-6 mt-12">
         <div className="text-center">
@@ -89,7 +89,6 @@ const LandingPage = () => {
           <p className="text-sm mt-2">Made with love and respect for Indian culture.</p>
         </div>
       </footer>
-
     </div>
   );
 };

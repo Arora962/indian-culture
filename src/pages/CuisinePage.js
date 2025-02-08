@@ -4,8 +4,8 @@ import Button from "../components/Button";
 
 const CuisinePage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-4xl font-extrabold mb-4">Indian Cuisine</h1>
+    <div className="min-h-screen bg-gradient-to-r from-yellow-300 via-red-300 to-pink-300 p-6">
+      <h1 className="text-4xl font-extrabold text-center text-red-800 mb-4">Indian Cuisine</h1>
       <p className="text-xl text-gray-600">
         Indian cuisine is diverse, with a rich variety of dishes influenced by geography, history, and culture.
         From spicy curries to savory snacks, Indian food is known for its bold flavors and aromatic spices.
@@ -16,8 +16,8 @@ const CuisinePage = () => {
       </p>
 
       {/* Key Indian Dishes */}
-      <section className="mt-8">
-        <h2 className="text-3xl font-semibold mb-4">Popular Indian Dishes</h2>
+      <section className="mt-8 bg-white shadow-lg rounded-lg p-6">
+        <h2 className="text-3xl font-semibold text-red-600 mb-4">Popular Indian Dishes</h2>
         <p className="text-lg text-gray-700">
           Indian cuisine offers a wide array of dishes that are loved worldwide. Here are some popular dishes you must try:
         </p>
@@ -31,8 +31,8 @@ const CuisinePage = () => {
       </section>
 
       {/* Regional Cuisines */}
-      <section className="mt-8">
-        <h2 className="text-3xl font-semibold mb-4">Regional Indian Cuisines</h2>
+      <section className="mt-8 bg-white shadow-lg rounded-lg p-6">
+        <h2 className="text-3xl font-semibold text-red-600 mb-4">Regional Indian Cuisines</h2>
         <p className="text-lg text-gray-700">
           India’s diverse regions each have their own unique style of cooking, influenced by local ingredients, climate, and traditions. Here are some of the most famous regional cuisines:
         </p>
@@ -45,31 +45,16 @@ const CuisinePage = () => {
       </section>
 
       {/* Importance of Spices */}
-      <section className="mt-8">
-        <h2 className="text-3xl font-semibold mb-4">The Role of Spices in Indian Cuisine</h2>
+      <section className="mt-8 bg-white shadow-lg rounded-lg p-6">
+        <h2 className="text-3xl font-semibold text-red-600 mb-4">The Role of Spices in Indian Cuisine</h2>
         <p className="text-lg text-gray-700">
           Spices are the heart and soul of Indian cuisine. They not only enhance the flavor of dishes but also offer numerous health benefits. Some common spices include:
         </p>
         <ul className="list-disc pl-6 mt-4 text-lg text-gray-700">
           <li><strong>Turmeric:</strong> Known for its anti-inflammatory properties, turmeric is often used in curries and rice dishes, giving them a vibrant yellow color.</li>
-          <li><strong>Cumin:</strong> Cumin seeds add a warm, earthy flavor and are used in tempering dishes like dal, curries, and rice.</li>
-          <li><strong>Coriander:</strong> Both the seeds and leaves of coriander are used to enhance flavor in Indian dishes. It adds a citrusy and slightly sweet flavor to food.</li>
-          <li><strong>Garam Masala:</strong> A blend of various spices, garam masala is a key ingredient in many Indian dishes, lending warmth, complexity, and depth to the food.</li>
-          <li><strong>Cardamom:</strong> A fragrant spice often used in desserts and beverages like masala chai, it adds a sweet and slightly spicy flavor to dishes.</li>
-        </ul>
-      </section>
-
-      {/* Cultural Significance of Food */}
-      <section className="mt-8">
-        <h2 className="text-3xl font-semibold mb-4">Cultural Significance of Indian Food</h2>
-        <p className="text-lg text-gray-700">
-          Food plays a central role in Indian culture, where meals are often a time for families to bond and celebrate together. Here's how food is intertwined with Indian culture:
-        </p>
-        <ul className="list-disc pl-6 mt-4 text-lg text-gray-700">
-          <li><strong>Celebrations and Festivals:</strong> Food is central to many Indian festivals like Diwali, Eid, and Pongal. Special sweets, snacks, and meals are prepared to mark these occasions.</li>
-          <li><strong>Hospitality:</strong> Offering food to guests is a deep-rooted tradition in India, where sharing a meal is seen as an act of kindness and respect.</li>
-          <li><strong>Regional Identity:</strong> Different regions have developed distinct cooking styles and food practices, giving each area of India a unique culinary identity.</li>
-          <li><strong>Ayurveda:</strong> Indian food is often tied to the principles of Ayurveda, with a focus on balancing the six tastes (sweet, sour, salty, bitter, pungent, and astringent) to promote health and wellness.</li>
+          <li><strong>Cumin:</strong> Cumin has a warm, earthy flavor and is used in both whole and ground form in Indian cooking.</li>
+          <li><strong>Cardamom:</strong> A sweet and aromatic spice used in both savory and sweet dishes. It’s commonly found in chai and desserts like kheer.</li>
+          <li><strong>Cloves:</strong> Cloves add a warm, spicy flavor to curries, rice dishes, and even desserts.</li>
         </ul>
       </section>
 

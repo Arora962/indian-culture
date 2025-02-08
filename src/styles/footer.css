@@ -1,10 +1,10 @@
 footer {
     display: flex;
-    flex-direction: column; /* Stack the content vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
     padding: 20px;
-    background-color: #2d2d2d; /* Dark background for the footer */
+    background-color: #2d2d2d; 
   }
   
   footer .col {
@@ -20,7 +20,6 @@ footer {
     font-size: 1rem;
   }
   
-  /* Medium screens like tablets */
   @media (max-width: 768px) {
     footer {
       flex-direction: column;
@@ -41,7 +40,6 @@ footer {
     }
   }
   
-  /* Small screens like phones */
   @media (max-width: 480px) {
     footer h5 {
       font-size: 1rem;
