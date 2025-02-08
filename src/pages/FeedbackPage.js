@@ -7,13 +7,13 @@ const FeedbackPage = () => {
   const navigate = useNavigate();  // Initialize the navigate function
   const [feedbackMessage, setFeedbackMessage] = useState(""); // Feedback message state
   const [error, setError] = useState(""); // Error handling state
-  const [success, setSuccess] = useState(""); 
-  const [loading, setLoading] = useState(false); // Loading state to handle spinner visibility
+  const [success, setSuccess] = useState("");
+  const [loading, setLoading] = useState(false); // Track loading state
 
   // Define backend URL dynamically for local and production
   const backendUrl = process.env.NODE_ENV === "production"
-  ? "https://indian-culture-sigma.vercel.app"  // Correct backend URL with protocol
-  : "http://localhost:3001";  // Local URL for local development
+    ? "https://indian-culture-sigma.vercel.app"  // Correct backend URL with protocol
+    : "http://localhost:3001";  // Local URL for local development
 
   const handleBackClick = () => {
     console.log("Back button clicked.");
@@ -32,7 +32,7 @@ const FeedbackPage = () => {
       return;
     }
 
-    setLoading(true);  // Start loading when submit is clicked
+    setLoading(true); // Start loading spinner
 
     try {
       // Send feedback to the backend
@@ -46,6 +46,8 @@ const FeedbackPage = () => {
 
       const data = await response.json();
 
+      setLoading(false); // Stop loading spinner after response
+
       if (response.ok) {
         setSuccess("Feedback submitted successfully!");
         setFeedbackMessage(""); // Clear textarea after successful submission
@@ -58,9 +60,8 @@ const FeedbackPage = () => {
         setError(data.error || "Something went wrong");
       }
     } catch (err) {
+      setLoading(false); // Stop loading spinner in case of error
       setError("Error occurred while submitting feedback.");
-    } finally {
-      setLoading(false);  // End loading after the submission is complete
     }
   };
 
@@ -69,16 +70,9 @@ const FeedbackPage = () => {
       <h1 className="text-3xl font-bold mb-4">Feedback</h1>
       {/* Display error message */}
       {error && <div className="text-red-500 mb-4">{error}</div>}
-      
+
       {/* Display success message */}
       {success && <div className="text-green-500 mb-4">{success}</div>}
-
-      {/* Loading Spinner */}
-      {loading && (
-        <div className="flex justify-center items-center mb-4">
-          <div className="w-12 h-12 border-4 border-t-4 border-gray-500 border-solid rounded-full animate-spin"></div>
-        </div>
-      )}
 
       <textarea
         className="w-3/4 p-3 border border-gray-400 rounded-lg"
@@ -88,7 +82,7 @@ const FeedbackPage = () => {
         onChange={(e) => setFeedbackMessage(e.target.value)}
       ></textarea>
 
-      {/* Button Container */}
+      {/* Button Container: Align Back button to the left and Submit button to the right */}
       <div className="flex mt-6 space-x-4">
         <Button
           className="bg-yellow-500 text-black hover:bg-yellow-600 flex-1"
@@ -96,12 +90,17 @@ const FeedbackPage = () => {
         >
           Back
         </Button>
-        <Button 
+        <Button
           className="bg-green-500 hover:bg-green-600 flex-1"
           onClick={handleSubmitClick}
-          disabled={loading} // Disable the submit button during loading
+          disabled={loading} // Disable submit button while loading
         >
-          {loading ? 'Submitting...' : 'Submit'} {/* Change button text during loading */}
+          {/* Show loading spinner if loading is true */}
+          {loading ? (
+            <div className="animate-spin border-4 border-t-4 border-gray-600 rounded-full w-6 h-6 mx-auto"></div>
+          ) : (
+            "Submit"
+          )}
         </Button>
       </div>
     </div>
