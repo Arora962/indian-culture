@@ -8,6 +8,7 @@ const FeedbackPage = () => {
   const [feedbackMessage, setFeedbackMessage] = useState(""); // Feedback message state
   const [error, setError] = useState(""); // Error handling state
   const [success, setSuccess] = useState(""); 
+  const [loading, setLoading] = useState(false); // Loading state to handle spinner visibility
 
   // Define backend URL dynamically for local and production
   const backendUrl = process.env.NODE_ENV === "production"
@@ -30,6 +31,8 @@ const FeedbackPage = () => {
       setError("Please provide feedback.");
       return;
     }
+
+    setLoading(true);  // Start loading when submit is clicked
 
     try {
       // Send feedback to the backend
@@ -56,6 +59,8 @@ const FeedbackPage = () => {
       }
     } catch (err) {
       setError("Error occurred while submitting feedback.");
+    } finally {
+      setLoading(false);  // End loading after the submission is complete
     }
   };
 
@@ -67,6 +72,14 @@ const FeedbackPage = () => {
       
       {/* Display success message */}
       {success && <div className="text-green-500 mb-4">{success}</div>}
+
+      {/* Loading Spinner */}
+      {loading && (
+        <div className="flex justify-center items-center mb-4">
+          <div className="w-12 h-12 border-4 border-t-4 border-gray-500 border-solid rounded-full animate-spin"></div>
+        </div>
+      )}
+
       <textarea
         className="w-3/4 p-3 border border-gray-400 rounded-lg"
         rows="5"
@@ -75,7 +88,7 @@ const FeedbackPage = () => {
         onChange={(e) => setFeedbackMessage(e.target.value)}
       ></textarea>
 
-      {/* Button Container: Align Back button to the left and Submit button to the right */}
+      {/* Button Container */}
       <div className="flex mt-6 space-x-4">
         <Button
           className="bg-yellow-500 text-black hover:bg-yellow-600 flex-1"
@@ -85,9 +98,10 @@ const FeedbackPage = () => {
         </Button>
         <Button 
           className="bg-green-500 hover:bg-green-600 flex-1"
-          onClick={handleSubmitClick} // Ensure Submit triggers the feedback post request
+          onClick={handleSubmitClick}
+          disabled={loading} // Disable the submit button during loading
         >
-          Submit
+          {loading ? 'Submitting...' : 'Submit'} {/* Change button text during loading */}
         </Button>
       </div>
     </div>
