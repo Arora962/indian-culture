@@ -23,6 +23,11 @@ app.get('/', (req, res) => {
   res.send('Hello from the backend!');
 });
 
+// Custom route for testing
+app.get('/custombackend', (req, res) => {
+  res.send('Hello from the custom backend!');
+});
+
 // Route to handle feedback submission
 app.post('/api/feedback', async (req, res) => {
   try {
