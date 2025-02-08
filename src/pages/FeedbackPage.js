@@ -11,8 +11,8 @@ const FeedbackPage = () => {
 
   // Define backend URL dynamically for local and production
   const backendUrl = process.env.NODE_ENV === "production"
-    ? "https://your-backend-name.vercel.app"  // Replace with your actual deployed backend URL
-    : "http://localhost:5001";  // Local development URL
+  ? "https://indian-culture-ohanbx0fn-kriti-aroras-projects-46f3b49e.vercel.app"  // Replace with your actual backend URL
+  : "http://localhost:5001";  // Local URL for local development
 
   const handleBackClick = () => {
     console.log("Back button clicked.");

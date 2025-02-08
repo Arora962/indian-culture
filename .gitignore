@@ -35,3 +35,4 @@ Thumbs.db           # Windows
 
 # Dependency lock files (you might want to keep package-lock.json, but you can ignore yarn.lock if you’re using npm instead of yarn)
 yarn.lock           # Ignore if you are using npm instead of yarn
+.vercel
