@@ -30,6 +30,18 @@ const CuisinePage = () => {
         </ul>
       </section>
 
+      {/* Key Dishes Images */}
+      <section className="mb-8">
+        <h3 className="text-2xl font-semibold text-center text-indigo-700 mb-6 mt-8">Key Indian Dishes Images</h3>
+        <div className="flex flex-wrap justify-center gap-4">
+          <img src="https://as2.ftcdn.net/v2/jpg/05/51/07/25/1000_F_551072557_60iIsUkWwbCNC2iBF9uXEbemBl2gvl1U.jpg" alt = "Biryani" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as1.ftcdn.net/v2/jpg/02/72/47/94/1000_F_272479453_Kl30iWCD9WWhlU8BNORRtNUR1ADxXTCh.jpg" alt="Dosa" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as2.ftcdn.net/v2/jpg/04/66/42/25/1000_F_466422564_LICnIvfjfGhieSKG4gxU35LirfjrxbOB.jpg" alt="Samosa" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as2.ftcdn.net/v2/jpg/11/36/53/61/1000_F_1136536103_RCNj7Ow6DTMvUloYPB1cvFEOBt5doAyb.jpg" alt="Butter Chicken" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as1.ftcdn.net/v2/jpg/04/06/07/22/1000_F_406072203_AVLMHuU5K0c8xXAABNbENJbypr1SqgTq.jpg" alt="Tea" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+        </div>
+      </section>
+
       {/* Regional Cuisines */}
       <section className="mt-8 bg-white shadow-lg rounded-lg p-6">
         <h2 className="text-3xl font-semibold text-red-600 mb-4">Regional Indian Cuisines</h2>
@@ -44,6 +56,17 @@ const CuisinePage = () => {
         </ul>
       </section>
 
+      {/* Regional Cuisines Images */}
+      <section className="mb-8">
+        <h3 className="text-2xl font-semibold text-center text-indigo-700 mb-6 mt-8">Regional Cuisines Images</h3>
+        <div className="flex flex-wrap justify-center gap-4">
+          <img src="https://as2.ftcdn.net/v2/jpg/11/79/74/57/1000_F_1179745743_afJM00Jc6mOmxqLcChepy3odhymxLF2c.jpg" alt = "North Indian Cuisine" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as1.ftcdn.net/v2/jpg/10/17/77/54/1000_F_1017775481_HydRc9i4Ckfb0qiEnlX8qdUmRAnynMlV.jpg" alt="South Indian Cuisine" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as2.ftcdn.net/v2/jpg/04/54/10/29/1000_F_454102963_ISrVoWOlOFjfGLZW1Bq1QzbxKYGDzl7N.jpg" alt="West Indian Cuisine" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as1.ftcdn.net/v2/jpg/10/43/60/74/1000_F_1043607410_qxIFclwPnoVBZRS0qb4jFINbaqL25Wwf.jpg" alt="East Indian Cuisine" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+        </div>
+      </section>
+
       {/* Importance of Spices */}
       <section className="mt-8 bg-white shadow-lg rounded-lg p-6">
         <h2 className="text-3xl font-semibold text-red-600 mb-4">The Role of Spices in Indian Cuisine</h2>
@@ -56,6 +79,17 @@ const CuisinePage = () => {
           <li><strong>Cardamom:</strong> A sweet and aromatic spice used in both savory and sweet dishes. It’s commonly found in chai and desserts like kheer.</li>
           <li><strong>Cloves:</strong> Cloves add a warm, spicy flavor to curries, rice dishes, and even desserts.</li>
         </ul>
+      </section>
+
+      {/* Spices Images */}
+      <section className="mb-8">
+        <h3 className="text-2xl font-semibold text-center text-indigo-700 mb-6 mt-8">Spices Images</h3>
+        <div className="flex flex-wrap justify-center gap-4">
+          <img src="https://as2.ftcdn.net/v2/jpg/00/94/32/05/1000_F_94320554_4UuLf4fHxd4mIx5PkQatO4sXyfuJxwNs.jpg" alt = "Turmeric" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as2.ftcdn.net/v2/jpg/10/60/13/97/1000_F_1060139752_RyY2RymWt88UPx5d9jyyXuEorA91GpMa.jpg" alt="Cumin" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as1.ftcdn.net/v2/jpg/11/27/78/14/1000_F_1127781401_VTkYb6oNsmlIhxAYqdkL1w9jUIVQvhns.jpg" alt="Cardamom" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as1.ftcdn.net/v2/jpg/09/49/97/58/1000_F_949975845_SLzH2G72SjHjJgBhnhrClDgUkng5Q7UV.jpg" alt="Cloves" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+        </div>
       </section>
 
       <div className="mt-6 flex justify-center">

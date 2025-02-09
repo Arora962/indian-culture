@@ -30,6 +30,18 @@ const FestivalsPage = () => {
         </ul>
       </section>
 
+      {/* Key Festivals Images */}
+      <section className="mb-8">
+        <h3 className="text-2xl font-semibold text-center text-indigo-700 mb-6 mt-8">Key Festivals Images</h3>
+        <div className="flex flex-wrap justify-center gap-4">
+          <img src="https://as2.ftcdn.net/v2/jpg/09/19/45/05/1000_F_919450553_Am9o9V4qaUCmDTRYv1bW4dEpPDI1KtxA.jpg" alt = "Diwali" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as2.ftcdn.net/v2/jpg/02/21/83/87/1000_F_221838715_fn2V1qrekDIDk89Kd0YeHEMonl5rAecg.jpg" alt="Holi" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://i0.wp.com/enewsroom.in/wp-content/uploads/2024/04/pngtree-eid-al-fitr-min.jpg" alt="Eid" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://i.pinimg.com/736x/3b/76/46/3b7646ea446510bddd98983dcfdee8db.jpg" alt="Durga Puja" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Lalbaugh_Ganesha.jpg/1200px-Lalbaugh_Ganesha.jpg" alt="Ganesh Chaturthi" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+        </div>
+      </section>
+
       {/* Regional Celebrations */}
       <section className="mt-8 bg-white shadow-lg rounded-lg p-6">
         <h2 className="text-3xl font-semibold text-pink-600 mb-4">Regional Celebrations</h2>
@@ -43,6 +55,18 @@ const FestivalsPage = () => {
           <li><strong>Lohri (Punjab, Haryana):</strong> Lohri marks the end of winter and is celebrated with bonfires, dancing, and singing traditional songs.</li>
           <li><strong>Navratri (Across India):</strong> A nine-night festival dedicated to Goddess Durga, celebrated with dance (Garba/Dandiya), fasting, and prayers.</li>
         </ul>
+      </section>
+
+      {/* Regional Celebrations Images */}
+      <section className="mb-8">
+        <h3 className="text-2xl font-semibold text-center text-indigo-700 mb-6 mt-8">Regional Celebrations Images</h3>
+        <div className="flex flex-wrap justify-center gap-4">
+          <img src="https://www.amarchitrakatha.com/wp-content/uploads/2020/08/03-Onam-865-X-500.jpg" alt="Onam" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://i0.wp.com/vaerorganic.com/wp-content/uploads/2023/01/21918746_PO_37-ai.png" alt="Pongal" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as1.ftcdn.net/v2/jpg/07/70/61/50/1000_F_770615007_OkTnGdabHfTDu2B0QOtAm9z31eUzaxWE.jpg" alt="Baisakhi" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as2.ftcdn.net/v2/jpg/11/44/57/73/1000_F_1144577367_7TSn25PFzIsYZ6ihXXbBt52fLv6FWoYf.jpg" alt="Lohri" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+          <img src="https://as1.ftcdn.net/v2/jpg/08/89/48/48/1000_F_889484814_gnpra90EQZLgjV3nhqu8NATvgwy5y1Pl.jpg" alt="Navratri" className="w-1/4 md:w-1/6 rounded-lg shadow-lg object-cover"/>
+        </div>
       </section>
 
       {/* Cultural Importance */}
